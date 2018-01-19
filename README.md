@@ -1,2 +1,0 @@
-# LearnToSwift
-Swift course

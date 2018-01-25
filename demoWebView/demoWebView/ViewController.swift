@@ -14,8 +14,17 @@ class ViewController: UIViewController {
     
     @IBAction func btnSearch(_ sender: Any) {
         if let url = URL(string: txtSearch.text!) {
-            let rq:URLRequest = URLRequest(url: url)
-            wvContent.loadRequest(rq)
+            var link:String = txtSearch.text!
+            
+            if (link.hasPrefix("https://") || link.hasPrefix("http://")) {
+                let rq:URLRequest = URLRequest(url: url)
+                wvContent.loadRequest(rq)
+            } else {
+                link = "https://\(link)"
+                let url2:URL = URL(string: link)!
+                let rq:URLRequest = URLRequest(url: url2)
+                wvContent.loadRequest(rq)
+            }
         } else {
             print("Lỗi chưa nhập URL.")
         }

@@ -24,18 +24,42 @@
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XTu-aD-oNt">
-                                <rect key="frame" x="34" y="42" width="266" height="30"/>
+                                <rect key="frame" x="76" y="42" width="224" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2L-gc-G64">
-                                <rect key="frame" x="322" y="45" width="37" height="24"/>
+                                <rect key="frame" x="322" y="45" width="29" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="icons8-search"/>
                                 <connections>
                                     <action selector="btnSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bBc-JB-dcz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQz-Mb-qXH">
+                                <rect key="frame" x="275" y="42" width="32" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="icons8-synchronize"/>
+                                <connections>
+                                    <action selector="btnReload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gM0-oL-A9x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eE-Yp-pMR">
+                                <rect key="frame" x="40" y="40" width="32" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="icons8-right_4"/>
+                                <connections>
+                                    <action selector="btnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJl-bg-60z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orR-wB-tZ6">
+                                <rect key="frame" x="8" y="40" width="32" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="icons8-left_4"/>
+                                <connections>
+                                    <action selector="btnBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TB0-BL-7go"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,6 +77,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-search" width="25" height="25"/>
+        <image name="icons8-left_4" width="24" height="24"/>
+        <image name="icons8-right_4" width="24" height="24"/>
+        <image name="icons8-search" width="24" height="24"/>
+        <image name="icons8-synchronize" width="24" height="24"/>
     </resources>
 </document>

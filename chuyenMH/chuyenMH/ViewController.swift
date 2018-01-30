@@ -11,12 +11,13 @@ import UIKit
 //var chuoi:String = ""
 
 class ViewController: UIViewController {
-
+    let data:UserDefaults = UserDefaults()
     @IBOutlet weak var txtNhap: UITextField!
     @IBAction func btnChuyenMH2(_ sender: Any) {
+        data.set(txtNhap.text, forKey: "duLieu")
 //        chuoi = txtNhap.text!
         let scr = storyboard?.instantiateViewController(withIdentifier: "MH2") as! manHinh2
-        scr.dulieu = txtNhap.text!
+//        scr.dulieu = txtNhap.text!
         navigationController?.pushViewController(scr, animated: true)
     }
     

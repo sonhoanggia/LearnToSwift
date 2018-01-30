@@ -9,12 +9,16 @@
 import UIKit
 
 class manHinh2: UIViewController {
+    let content:UserDefaults = UserDefaults()
     @IBOutlet weak var lblHienThi: UILabel!
-    var dulieu:String!
+//    var dulieu:String!
     override func viewDidLoad() {
         super.viewDidLoad()
 //        lblHienThi.text = chuoi
-        lblHienThi.text = dulieu
+//        lblHienThi.text = dulieu
+        if let str = content.object(forKey: "duLieu") as? String {
+            lblHienThi.text = str
+        }
     }
 
     override func didReceiveMemoryWarning() {
